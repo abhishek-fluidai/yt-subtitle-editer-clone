@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import SubtitlesIcon from '@mui/icons-material/Subtitles';
 import FeedbackIcon from '@mui/icons-material/Feedback';
 import CloseIcon from '@mui/icons-material/Close';
