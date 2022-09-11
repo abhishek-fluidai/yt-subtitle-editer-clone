@@ -1,0 +1,8 @@
+.opt:hover {
+    background-color: rgba(61, 101, 134, 0.1);
+    cursor: pointer;
+}
+
+.player {
+        max-width: 300px;
+}
