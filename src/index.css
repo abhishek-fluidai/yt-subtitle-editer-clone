@@ -13,3 +13,28 @@ code {
     monospace;
 }
 
+#waveform {
+  width: 100%;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #0d0d0d #292829;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    height:10px
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #292829;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(13, 13, 13,0.7);
+    border-radius: 9px;
+    border: 0px solid #ffffff;
+  }
