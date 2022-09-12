@@ -14,6 +14,7 @@ import song from "../../1.mp4";
 export default function Surf() {
   const { isPlaying } = useContext(ThemeContext);
   const { zoom } = useContext(ThemeContext);
+  const { isLoading, setLoading } = useContext(ThemeContext);
 
   const wavesurferRef = useRef();
   useEffect(() => {
@@ -43,10 +44,14 @@ export default function Surf() {
 
       wavesurferRef.current.on("ready", () => {
         console.log("WaveSurfer is ready");
+        setLoading(false);
+        console.log(isLoading);
       });
 
       wavesurferRef.current.on("loading", (data) => {
+        setLoading(true);
         console.log("loading --> ", data);
+        console.log(isLoading);
       });
 
       if (window) {

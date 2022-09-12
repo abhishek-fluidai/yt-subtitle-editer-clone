@@ -55,6 +55,7 @@ export default function Play() {
     <Player
       playerRef={playerRef}
       rstyle={{ width: "100px" }}
+      keyboardShortcut={false}
       src={[
         {
           quality: 720,
@@ -80,7 +81,7 @@ export default function Play() {
         //https://cdn.glitch.me/cbf2cfb4-aa52-4a1f-a73c-461eef3d38e8/720.mp4"
         // },
       ]}
-      poster="https://cdn.jsdelivr.net/gh/naptestdev/video-examples@master/poster.png"
+      poster="https://i.ytimg.com/an_webp/SAL2JZxpoGY/mqdefault_6s.webp?du=3000&sqp=CIjY_ZgG&rs=AOn4CLCX4hSZMl5hE9qsurNbuceyAlthWQ"
     />
   );
 }

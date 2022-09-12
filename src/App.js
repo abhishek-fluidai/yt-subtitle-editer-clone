@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -17,10 +17,19 @@ function App() {
   const [zoom, setZoom] = useState(30);
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentTime, setCT] = useState("0");
-
+  const [isLoading, setLoading] = useState(true);
   return (
     <ThemeContext.Provider
-      value={{ zoom, setZoom, isPlaying, setIsPlaying, currentTime, setCT }}
+      value={{
+        zoom,
+        setZoom,
+        isPlaying,
+        setIsPlaying,
+        currentTime,
+        setCT,
+        isLoading,
+        setLoading,
+      }}
     >
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
